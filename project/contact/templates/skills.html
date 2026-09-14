@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shreya|Skills</title>
+    <link rel="icon"href="https://cdn-icons-png.flaticon.com/512/10504/10504049.png">
+<link rel="stylesheet" href="{% static 'css/skills.css' %}">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <ul class="details  ms-auto d-flex">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'skills' %}">SKILLS</a></li>
+            <li><a href="{% url 'education' %}">EDUCATION</a></li>
+            <li><a href="{% url 'project' %}">PROJECT</a></li>
+            <li><a href="{% url 'certificate' %}">CERTIFICATE</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <section class="skills">
+    <h1 class="title"><b>MY SKILLS AND ABILITIES</b></h1>
+
+    <div class="skill-container">
+
+        <div class="skill-card"><img src="{% static 'images/python-logo.png' %}" width="20px" height="60px"><p>Python</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/Bootstrap.png' %}"><p>Bootstrap</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/html5.png' %}"><p>HTML5</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/css.png' %}"width="50px"height="80px"><p>CSS</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/javascript.png' %}"width="40px"height="90px"><p>Javascript</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/django.png' %}"width="40px"height="90px"><p>Django</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/C_Programming_Language.png' %}"><p>C</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/mysql.png' %}"width="80px"height="70px"><p>MySQL</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/phylip.png' %}"><p>PHYLIP</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/mega.png' %}"width="20px"height="70px"><p>MEGA</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/gromacs.png' %}"width="100px"height="70px"><p>GROMACS</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/java.png' %}"width="50px"height="100px"><p>Java</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/autodock.png' %}"><p>AutoDock</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/autodock vina.png' %}"><p>AutoDock Vina</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/perl.png' %}"><p>Perl</p></div>
+
+        <div class="skill-card"><img src="{% static 'images/linux.png' %}"><p>Linux</p></div>
+
+
+
+    </div>
+</section>
+
+
+
+</body>
+</html>

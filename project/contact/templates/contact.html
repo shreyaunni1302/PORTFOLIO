@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shreya | Contact</title>
+
+    <link rel="icon"
+        href="https://cdn-icons-png.flaticon.com/512/10504/10504049.png">
+
+    <!-- Your contact CSS -->
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+        <ul class="details  ms-auto d-flex">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'skills' %}">SKILLS</a></li>
+            <li><a href="{% url 'education' %}">EDUCATION</a></li>
+            <li><a href="{% url 'project' %}">PROJECT</a></li>
+            <li><a href="{% url 'certificate' %}">CERTIFICATE</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+
+        <div class="contact-container">
+            <!-- LEFT SIDE IMAGE -->
+            <div class="contact-img">
+
+                <img src="https://unblast.com/wp-content/uploads/2020/09/Contact-Us-Vector-Illustration-Part-02-1.jpg"
+                    alt="Contact Us">
+            </div>
+            <!-- RIGHT SIDE FORM -->
+            <div class="table">
+
+                <form class="form" method="POST">
+
+                    {% csrf_token %}
+
+                    <h2 style="color:rgb(234, 198, 198)">
+                        CONTACT DETAILS
+                    </h2>
+                    <!-- FULL NAME -->
+                    <div class="details" >
+
+                        <input type="text" name="name" placeholder="Full Name" required>
+
+                    </div>
+                    <br><br>
+                    <!-- EMAIL -->
+                    <div class="details">
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="E-MAIL"
+                            required>
+
+                    </div>
+                    <br><br>
+                    <!-- PHONE NUMBER -->
+                    <div class="details">
+
+                        <input
+                            type="text"
+                            name="phone"
+                            placeholder="Phone Number"
+                            required>
+
+                    </div>
+                    <br><br>
+                    <!-- MESSAGE -->
+                    <div class="details">
+
+                        <textarea
+                            name="message"
+                            placeholder="Message"
+                            required></textarea>
+
+                    </div>
+                    <br><br>
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit">
+                        SUBMIT
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

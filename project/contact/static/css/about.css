@@ -1,0 +1,129 @@
+
+*{opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+body{
+  background-image:url("https://wallpapers.com/images/hd/aesthetic-white-color-vdr6u6c5dfcf7716.jpg")
+    }
+
+
+
+img {
+  float: right;
+  position: relative;
+  margin-right: 90px;
+  margin-top:-40px;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  transition: background-color 1s ease-out, transform 1s ease-out; }
+img:hover 
+{
+  transform: scale(1.1);
+}
+
+
+
+h1{margin-left:150px;margin-top: 130px;
+  color:brown;
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.para{
+  width: 30%;
+  margin-left: 150px;
+  margin-top: -20px;
+  
+  float: left;
+  font-style:bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 130%;
+  text-align:justify;
+  
+  opacity: 0;
+  animation: animation 4s ease forwards;
+}
+@keyframes animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px); 
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    40% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }}
+
+
+.navbar{
+          background-color: rgba(94, 8, 8, 0.695);
+          margin: 10px;
+          padding: 10px;
+          font-size: 20px;
+        }
+
+.navbar ul {
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: .5s;
+}
+.navbar ul li:hover a{color:rgb(104, 74, 4);}
+
+.details{
+  display: flex;
+  gap: 20px;
+}

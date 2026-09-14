@@ -1,0 +1,311 @@
+
+*{opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/*image*/
+
+.woman-wrapper {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.woman-img {
+    position:relative;
+    width: 650px;
+    height: 450px;
+    margin-top: 30px;
+    margin-right: 250px;
+    display: block;
+    background: transparent;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    cursor: pointer;
+}
+
+.woman-img:hover {
+    transform: translateY(-12px) scale(1.1);
+    filter: drop-shadow(0 15px 25px rgba(27, 23, 23, 0.3));
+}
+
+
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+/*text*/
+h1{text-indent: 40px;
+  color:rgb(53, 33, 156);
+  position: relative;
+  left: 150px;
+  margin-top:100px;
+  display:flex;
+}
+h2{text-indent: 40px;
+  position: relative;
+  left:118px;
+  font-size: 23px;
+  display:flex;
+  color:rgb(114, 30, 30);
+
+  opacity: 0;
+  animation: animation 2s ease forwards;
+}
+@keyframes animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }}
+
+
+button{
+  background-color: rgba(56, 106, 221, 0.932);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size:20px;
+  transition: background-color 1s ease-out, transform 1s ease-out;
+  margin-left: 190px;
+  float: left;
+
+  opacity: 0;
+  animation: fad 4s ease forwards;
+}
+@keyframes fad {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+button:hover {
+  background-color: rgb(148, 26, 5);
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.links{
+    margin-top: 30px;
+    margin-left: -10px;
+    gap: 10px;
+}
+.links a{
+    text-decoration: none;
+    font-size: 26px;
+    color:rgb(29, 40, 138);
+    transition: 0.3s ease;
+}
+
+
+.links a i1{
+  font-size: 15px;
+  color:black;
+  padding-left: 170px;
+
+  opacity: 0;
+  animation: linkedin 6s ease forwards;
+}
+@keyframes linkedin {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.links a i1:hover{
+  color:rgb(9, 9, 212);
+  transition: 1.01s;
+}
+
+
+
+
+.links a i2{
+  font-size: 20px;
+  color:black;
+  padding-left: 10px;
+
+  opacity: 0;
+  animation: insta 6s ease forwards;
+}
+@keyframes insta {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.links a i2:hover{
+  color:rgb(9, 9, 212);
+  transition: 1.01s;
+}
+
+
+
+.links a i3{
+  font-size: 20px;
+  color:black;
+  padding-left: 12px;
+  
+  opacity: 0;
+  animation: youtube 6s ease forwards;
+}
+@keyframes youtube {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.links a i3:hover{
+  color:rgb(9, 9, 212);
+  transition: 1.01s;
+}
+
+.links a i4{
+  font-size: 20px;
+  color:black;
+  padding-left: 7px;
+
+  opacity: 0;
+  animation: git 6s ease forwards;
+}
+@keyframes git {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.links a i4:hover{
+  color:rgb(9, 9, 212);
+  transition: 1.01s;
+}
+
+
+
+body{
+  background-image:url("https://media.gettyimages.com/id/1477433554/video/abstract-data-grid-seamlessly-loopable-background-animation-technology-ai-data-science-light.jpg?s=640x640&k=20&c=S8h4RKg3DCIfL32InW9hFMDTH5O7jGsT_NyQCksdHgY=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar{
+          background-color: rgba(94, 8, 8, 0.695);
+          margin: 10px;
+          padding: 10px;
+          font-size: 20px;
+        }
+
+.navbar ul {
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: .5s;
+  
+}
+.navbar ul li:hover a{color:rgb(104, 74, 4);}
+
+.details{
+  display: flex;
+  gap: 20px;
+}
+
+

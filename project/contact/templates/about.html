@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya | About</title>
+
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10504/10504049.png">
+
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+        <ul class="details  ms-auto d-flex">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'skills' %}">SKILLS</a></li>
+            <li><a href="{% url 'education' %}">EDUCATION</a></li>
+            <li><a href="{% url 'project' %}">PROJECT</a></li>
+            <li><a href="{% url 'certificate' %}">CERTIFICATE</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <h1>I'm Shreya</h1>
+
+    <div class="about-content">
+
+        <img src="{% static 'images/pic.png.jpg' %}" class="about-img" alt="Shreya">
+
+        <p style="font-size: 20px;margin-left:150px;">
+            <b style="color:rgb(165, 42, 112)">
+            Full Stack Developer | Bioinformatics Postgraduate | Frontend & UI Enthusiast
+            </b>
+        </p>
+            <br>
+        <p style="font-size: 20px;margin-left: 50px;">
+            A Bioinformatics postgraduate with a growing passion for technology, web development, and user interface design. With an academic foundation in computational biology and practical training in programming and web development, I enjoy combining analytical thinking with creativity to build meaningful digital experiences. I am a curious and dedicated learner who enjoys exploring new technologies, developing my skills through hands-on projects, and continuously challenging myself to grow both personally and professionally.<br><br>
+            I completed my Master's degree in Bioinformatics from <b>Union Christian College, Aluva, affiliated with Mahatma Gandhi University</b>. My postgraduate studies provided me with a strong foundation in computational biology, molecular research, data analysis, and scientific problem-solving.I gained experience with various bioinformatics and computational tools while developing analytical thinking, research skills, attention to detail, and the ability to approach complex problems systematically.<br><br>
+            To expand my technical knowledge beyond my academic background, I completed a six-month offline <b>Python and Django development course at Avodha Institute</b>. During this training, I gained practical knowledge of Python, Django, HTML, CSS, Bootstrap, JavaScript, and MySQL, and developed an understanding of programming fundamentals, database management, frontend development, and web application development. I applied these skills through projects such as an Online Library Web Application, a Django To-Do Application, and other web-based projects. These experiences helped me improve my ability to structure web pages, develop functional applications, work with databases, and create clean and visually appealing interfaces.<br><br>
+            At present, I am particularly interested in <b>frontend development</b>, especially HTML and CSS, where I enjoy creating webpages from scratch and experimenting with layouts, colours, typography, spacing, backgrounds, borders, images, buttons, and navigation elements to make websites visually attractive and well-organized. I enjoy arranging text and images, creating different sections, and seeing how CSS can transform a simple HTML structure into a polished webpage. Along with frontend development, I am also developing an interest in UI/UX design, particularly understanding how visual design, consistency, usability, and simple user interactions can contribute to a better web experience. I am currently strengthening my knowledge of responsive web design, Bootstrap, JavaScript, and Figma, while building practical projects that allow me to combine my technical skills with creativity. My goal is to continuously improve my frontend skills and grow into a professional who can create responsive, functional, visually appealing, and user-friendly websites.
+
+        </p>
+
+    </div>
+
+</body>
+</html>

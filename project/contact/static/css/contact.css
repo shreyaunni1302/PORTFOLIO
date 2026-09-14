@@ -1,0 +1,135 @@
+
+*{opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+body{background-image: url("https://static.vecteezy.com/system/resources/previews/016/341/324/non_2x/deep-dark-violet-neon-lights-watercolor-on-black-background-dark-purple-grungy-background-dark-purple-marble-texture-background-old-purple-paper-background-purple-stained-grungy-background-free-vector.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+
+
+.navbar{
+          background-color: rgba(94, 8, 8, 0.695);
+          margin: 10px;
+          padding: 10px;
+          font-size: 20px;
+        }
+
+.navbar ul {
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: .5s;
+}
+.navbar ul li:hover a{color:rgb(104, 74, 4);}
+
+.details{
+  display: flex;
+  gap: 20px;
+}
+
+
+
+img{
+  float: left;
+  position: relative;
+  margin-left: -2px;
+  margin-top:-2px;
+  width: 650px;
+  height: 500px;
+  border-radius: 10px;
+  transition: background-color 1s ease-out, transform 1s ease-out; }
+img:hover 
+{
+  transform: scale(1.1);
+}
+
+
+.form{
+  font-size: large;
+  margin: 5px;
+}
+
+
+
+input[type] {
+  width:300px;
+  height: 40px;
+  padding: 5px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  border: 3px solid #0c0909;
+  outline: none;
+}
+
+input[type]:focus {
+  background-color: rgba(244, 243, 241, 0.805);
+}
+
+
+.contact-container{
+      background-image: url("https://images.unsplash.com/photo-1730275163160-a13524ee811a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGlnaHQlMjBjb2xvdXJ8ZW58MHx8MHx8fDA%3D");
+      padding:20px;
+      width:90%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+}
+
+button{
+  background-color: rgba(115, 53, 3, 0.695);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size:15px;
+  transition: background-color .1s ease-out, transform .1s ease-out;
+}
+button:hover {
+  background-color: rgba(132, 82, 8, 0.695);
+  transform: scale(1.01);
+}
+
+.table{
+    background-color: rgba(245, 243, 242, 0.768);
+    display: flex;
+    width:40%;
+    gap:5px;
+   
+    padding: 40px;
+    border: solid;
+    border-radius: 10px;
+
+    border-color: black;      
+    margin-left: 675px;              
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+

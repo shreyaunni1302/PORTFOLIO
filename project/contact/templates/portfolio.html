@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya|Home</title>
+    <link rel="icon"href="https://cdn-icons-png.flaticon.com/512/10504/10504049.png">
+<link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+        <ul class="details  ms-auto d-flex">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'skills' %}">SKILLS</a></li>
+            <li><a href="{% url 'education' %}">EDUCATION</a></li>
+            <li><a href="{% url 'project' %}">PROJECT</a></li>
+            <li><a href="{% url 'certificate' %}">CERTIFICATE</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+<section class="home">
+
+    <div class="home-content">
+        <div class="home-text">
+            <h1><b>Hi There,<br>I'm Shreya Unni</b></h1>
+            <h2><b>Full Stack Developer</b></h2>
+
+            <button onclick="cv()"><b>About Me</b></button><br><br>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/shreya-unni-1981b4333/details/skills/"><i1 class="bx bxl-linkedin bx-md"></i1></a>
+                <a href="https://www.instagram.com/"><i2 class="bx bxl-instagram bx-md"></i2></a>
+                <a href="https://www.youtube.com/"><i3 class="bx bxl-youtube bx-md"></i3></a>
+                <a href="https://github.com/shreyaunni1302"><i4 class="bx bxl-github bx-md"></i4></a>
+            </div>
+        </div>
+        <div class="woman-wrapper">
+            <img src="{% static 'images/women.png' %}" class="woman-img" alt="woman">
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    function cv()
+    {
+        window.location.href="{% static 'pdf/SHREYA UNNI-Resume.pdf' %}";
+    }
+</script>
+
+</body>
+</html>

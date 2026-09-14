@@ -1,0 +1,137 @@
+
+*{opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.navbar{
+          background-color: rgba(94, 8, 8, 0.695);
+          margin: 10px;
+          padding: 10px;
+          font-size: 20px;}
+
+.navbar ul {
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: .5s;
+}
+.navbar ul li:hover a{color:rgb(104, 74, 4);}
+
+.details{
+  display: flex;
+  gap: 20px;
+}
+
+
+body{background-image: url("https://images.ctfassets.net/nnkxuzam4k38/4BIP4ge9ontCTkNubiY4lb/48121f9d09134fd83670b1d6e182aa66/white-particles-background.png");}
+
+
+
+/*MAIN*/
+
+.skills {
+    padding: 20px 150px;
+    text-align: center;
+
+  opacity: 0;
+  animation: ani 2s ease forwards;
+}
+
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: rgb(99, 22, 15);
+}
+
+.skill-container {
+    background-color: rgba(94, 8, 8, 0.695);
+    border-radius: 13px;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 45px;
+}
+
+.skill-card {
+    background-color: rgba(34, 2, 64, 0.644);
+    border-radius: 12px;
+    padding: 5px 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.skill-card img {
+    padding: 10px;
+    width: 85px;
+    display: block;
+    margin: auto;
+}
+
+.skill-card p {
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.skill-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.574);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .skill-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

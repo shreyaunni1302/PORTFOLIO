@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shreya|Certificate</title>
+    <link rel="icon"href="https://cdn-icons-png.flaticon.com/512/10504/10504049.png">
+<link rel="stylesheet" href="{% static 'css/certificate.css' %}">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <ul class="details  ms-auto d-flex">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'skills' %}">SKILLS</a></li>
+            <li><a href="{% url 'education' %}">EDUCATION</a></li>
+            <li><a href="{% url 'project' %}">PROJECT</a></li>
+            <li><a href="{% url 'certificate' %}">CERTIFICATE</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="certificate">
+        <h1 class="title">CERTIFICATES</h1>
+        <div class="main">
+            <div class="cer-box">
+                    <img src="{% static 'images/Computational Genomics.jpg' %}" >
+                    <h3>Qualified the course ‘Computational Genomics’<br> in NPTEL.</h3>
+                    <p>(NPTEL)</p>
+            </div>
+            <div class="cer-box">
+                    <img src="{% static 'images/Course completion Academor.jpg' %}" >
+                    <h3>2-month online Internship <br>on ‘Bioinformatics’ <br>at Academor Edutech. </h3>
+                    <p>(Academor Edutech)</p>
+            </div>
+            <div class="cer-box">
+                    <img src="{% static 'images/NGS.jpg' %}" >
+                    <h3>Six days workshop on NGS Workshop Series: RNA-SEQ: ANALYSIS PIPELINE.</h3>
+                    <p>(GENEFITHUB)</p>
+            </div>
+            <div class="cer-box">
+                    <img src="{% static 'images/AI AND ROBOTICS.jpg' %}" >
+                    <h3>One day Webinar on AI and Robotics. </h3>
+                    <p>(GENEFITHUB)</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

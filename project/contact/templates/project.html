@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shreya|Project</title>
+    <link rel="icon"href="https://cdn-icons-png.flaticon.com/512/10504/10504049.png">
+<link rel="stylesheet" href="{% static 'css/project.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <ul class="details  ms-auto d-flex">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'skills' %}">SKILLS</a></li>
+            <li><a href="{% url 'education' %}">EDUCATION</a></li>
+            <li><a href="{% url 'project' %}">PROJECT</a></li>
+            <li><a href="{% url 'certificate' %}">CERTIFICATE</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="project">
+        <h1 class="title"><img src="project.png"class="logo"width="40px"height="40px"> TRAINING PROJECTS</h1>
+
+        <div class="timeline">
+
+            <div class="container left">
+                <div class="card">
+                    <h3>Online Library Web Application - Django </h3>
+                    <span>Technologies: Python, Django, HTML, CSS, Bootstrap, MySQL</span>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="card">
+                    <h3>To-Do List Web Application - Django</h3>
+                    <span>Technologies: Python, Django, HTML, CSS, Bootstrap, MySQL</span>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="card">
+                    <h3>Calculator Web Application </h3>
+                    <span>Technologies: HTML, CSS, Bootstrap, JavaScript</span>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="card">
+                    <h3>Ceremony Poster Designs</h3>
+                    <span>Technologies: HTML, CSS</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="project">
+        <h1 class="title"><img src="project.png"class="logo"width="40px"height="40px"> ACADEMIC PROJECTS</h1>
+
+        <div class="timeline">
+
+            <div class="container left">
+                <div class="card">
+                    <h3>The Phylogenetic Analysis of Nucleoprotein in five different Viruses from a common family using PHYLIP and TREEVIEW</h3>
+                    <span>April 2023 - July 2023</span>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="card">
+                    <h3>Computational studies to understand the molecular mechanism of Trigonelline Derivatives against ADRM1 of Ovarian Cancer</h3>
+                    <span>April 2025 - July 2025</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+</body>
+</html>

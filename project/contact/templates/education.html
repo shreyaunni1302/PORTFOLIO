@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya|Education</title>
+    <link rel="icon"href="https://cdn-icons-png.flaticon.com/512/10504/10504049.png">
+<link rel="stylesheet" href="{% static 'css/education.css' %}">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <ul class="details  ms-auto d-flex">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'skills' %}">SKILLS</a></li>
+            <li><a href="{% url 'education' %}">EDUCATION</a></li>
+            <li><a href="{% url 'project' %}">PROJECT</a></li>
+            <li><a href="{% url 'certificate' %}">CERTIFICATE</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <section class="education">
+    <h1 class="title">MY EDUCATION</h1>
+
+    <div class="edu-box">
+        <img src="https://naac.uccollege.edu.in/wp-content/uploads/sites/19/2023/11/PXL_20231124_052540331.PANO7949-scaled-e1704363031403.jpg" alt="">
+        <div class="info">
+            <h2>Master of Science in Bioinformatics</h2>
+            <p><b>Union Christian College, Aluva</b></p>
+            <span class="status">2023-2025 | Completed</span>
+        </div>
+    </div>
+
+    <div class="edu-box">
+        <img src="https://content.jdmagicbox.com/v2/comp/ernakulam/r2/0484px484.x484.220921015041.m4r2/catalogue/mes-m-k-mackar-pillay-college-for-advanced-studies-aluva-ernakulam-colleges-ax4mi4nbk1.jpg" alt="">
+        <div class="info">
+            <h2>Bachelor of Science in Bioinformatics</h2>
+            <p><b>M.K Mackar Pillay College for Advanced Studies</b></p>
+            <span class="status">2020-2023 | Completed</span>
+        </div>
+    </div>
+
+    <div class="edu-box">
+        <img src="https://content3.jdmagicbox.com/comp/kasaragod/h4/9999p4994.4994.131212092631.f2h4/catalogue/rajahs-higher-secondary-school-nileshwar-kasaragod-senior-secondary-schools-cfvi2slms7.jpg" alt="">
+        <div class="info">
+            <h2>HSC Science </h2>
+            <p><b>Rajah's Higher Secondary School,Nileshwar</b></p>
+            <span class="status">2018-2020 | Completed</span>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
