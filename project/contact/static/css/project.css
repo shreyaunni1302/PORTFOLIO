@@ -152,7 +152,7 @@ body{background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci
 
 
 .container.right {
-    left: 600px;
+    left: 630px;
     opacity: 0;
     animation: right 3s ease forwards;
 }
