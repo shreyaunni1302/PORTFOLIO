@@ -2,4 +2,8 @@ Django
 gunicorn
 whitenoise
 dj-database-url
+<<<<<<< HEAD
 psycopg[binary]
+=======
+psycopg[binary]
+>>>>>>> 273002017a40497cbc14a9b841a958b4c9caacb6

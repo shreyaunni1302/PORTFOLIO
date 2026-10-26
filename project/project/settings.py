@@ -148,3 +148,6 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+
+# Temporary: run database migrations during deployment
