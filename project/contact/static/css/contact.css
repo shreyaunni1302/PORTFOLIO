@@ -133,3 +133,165 @@ button:hover {
 }
 
 
+
+
+/* ===== CONTACT PAGE RESPONSIVE DESIGN ===== */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Tablet: 601px to 991px */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    img {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    .table {
+        width: 85%;
+        margin: 20px auto;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    input[type] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .navbar ul,
+    .details {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+/* Mobile phones: 600px and below */
+@media screen and (max-width: 600px) {
+    .navbar {
+        margin: 6px;
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .navbar ul,
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    img {
+        float: none;
+        position: static;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto 15px;
+        box-sizing: border-box;
+    }
+
+    img:hover {
+        transform: none;
+    }
+
+    .contact-container {
+        width: 100%;
+        margin: 10px auto;
+        padding: 12px;
+        box-sizing: border-box;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .form {
+        width: 100%;
+        font-size: 16px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+
+    input[type],
+    textarea,
+    select {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    input[type] {
+        height: 42px;
+    }
+
+    .table {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin: 15px 0;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    button {
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
+
+/* Small phones: 360px and below */
+@media screen and (max-width: 360px) {
+    .contact-container {
+        padding: 8px;
+    }
+
+    .table {
+        padding: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 11px;
+    }
+}
+
+/* Preserve desktop image and layout */
+@media screen and (min-width: 992px) {
+    img {
+        width: 650px;
+        height: 500px;
+    }
+
+    .table {
+        width: 40%;
+        margin-left: 675px;
+    }
+}

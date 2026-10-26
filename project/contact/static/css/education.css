@@ -197,3 +197,194 @@ body{background-image: url("https://www.shutterstock.com/image-photo/warmtoned-s
     box-shadow: 0 0 12px rgb(99, 22, 15);;
 }
 
+
+
+
+
+/* ===== EDUCATION PAGE RESPONSIVE DESIGN ===== */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Tablet: 601px to 991px */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    .education {
+        padding: 40px 30px;
+        box-sizing: border-box;
+    }
+
+    .education .title {
+        font-size: 34px;
+    }
+
+    .edu-box {
+        gap: 18px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .edu-box img {
+        width: 220px;
+        height: 155px;
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+
+    .edu-box .info {
+        min-width: 0;
+    }
+
+    .edu-box h2 {
+        font-size: 26px;
+        overflow-wrap: anywhere;
+    }
+
+    .edu-box p {
+        font-size: 20px;
+        overflow-wrap: anywhere;
+    }
+
+    .status {
+        font-size: 17px;
+    }
+
+    .navbar ul,
+    .details {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+/* Mobile phones: 600px and below */
+@media screen and (max-width: 600px) {
+    .navbar {
+        margin: 6px;
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .navbar ul,
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .education {
+        padding: 25px 12px;
+        box-sizing: border-box;
+    }
+
+    .education .title {
+        font-size: clamp(25px, 7vw, 32px);
+        line-height: 1.3;
+        margin: 10px 0 25px;
+    }
+
+    .education .subtitle {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .edu-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        margin-top: 22px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .edu-box img {
+        width: 100%;
+        max-width: 280px;
+        height: 170px;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .edu-box .info {
+        width: 100%;
+        text-align: center;
+        min-width: 0;
+    }
+
+    .edu-box h2 {
+        font-size: 23px;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .edu-box p {
+        font-size: 17px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .status {
+        font-size: 15px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Small phones: 360px and below */
+@media screen and (max-width: 360px) {
+    .education {
+        padding: 20px 8px;
+    }
+
+    .edu-box {
+        padding: 9px;
+    }
+
+    .edu-box img {
+        height: 145px;
+    }
+
+    .edu-box h2 {
+        font-size: 20px;
+    }
+
+    .edu-box p {
+        font-size: 15px;
+    }
+
+    .status {
+        font-size: 14px;
+    }
+
+    .navbar ul li a {
+        font-size: 11px;
+    }
+}
+
+/* Preserve desktop layout */
+@media screen and (min-width: 992px) {
+    .education {
+        padding: 70px 120px;
+    }
+
+    .edu-box {
+        flex-direction: row;
+    }
+}

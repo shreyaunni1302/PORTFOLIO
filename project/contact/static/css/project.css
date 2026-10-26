@@ -213,4 +213,196 @@ body{background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci
 
 
 
+/* ===== PROJECT PAGE RESPONSIVE DESIGN ===== */
 
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Tablet: 601px to 991px */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    .project {
+        padding: 25px 15px;
+        box-sizing: border-box;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .timeline {
+        width: 96%;
+    }
+
+    .container {
+        width: 50%;
+        padding: 15px 25px;
+        box-sizing: border-box;
+    }
+
+    .container.left {
+        right: 0;
+    }
+
+    .container.right {
+        left: 50%;
+    }
+
+    .card {
+        width: 100%;
+        padding: 18px;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .card h3 {
+        font-size: 19px;
+    }
+
+    .navbar ul,
+    .details {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+/* Mobile phones: 600px and below */
+@media screen and (max-width: 600px) {
+    .navbar {
+        margin: 6px;
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .navbar ul,
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .project {
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .title {
+        font-size: clamp(24px, 7vw, 30px);
+        line-height: 1.3;
+        margin: 10px 0 25px;
+    }
+
+    .timeline {
+        width: 100%;
+        margin: 0;
+        padding-left: 25px;
+        box-sizing: border-box;
+    }
+
+    /* Move the timeline line to the left */
+    .timeline::after {
+        left: 8px;
+        transform: none;
+        width: 4px;
+    }
+
+    /* Stack all project cards in one column */
+    .container,
+    .container.left,
+    .container.right {
+        position: relative;
+        left: auto;
+        right: auto;
+        width: 100%;
+        padding: 10px 0 10px 15px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 100%;
+        padding: 16px 14px;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .card span {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Small phones: 360px and below */
+@media screen and (max-width: 360px) {
+    .project {
+        padding: 15px 7px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline::after {
+        left: 5px;
+    }
+
+    .container,
+    .container.left,
+    .container.right {
+        padding-left: 12px;
+    }
+
+    .card {
+        padding: 12px 10px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card span {
+        font-size: 13px;
+    }
+
+    .navbar ul li a {
+        font-size: 11px;
+    }
+}
+
+/* Preserve desktop layout */
+@media screen and (min-width: 992px) {
+    .project {
+        padding: 30px;
+    }
+
+    .timeline {
+        width: 90%;
+    }
+
+    .container.left {
+        right: 110px;
+    }
+
+    .container.right {
+        left: 630px;
+    }
+}
